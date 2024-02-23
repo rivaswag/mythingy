@@ -31,3 +31,7 @@ void AerisObservations::doUpdate(AerisObservationsData *observations, String pat
         if (c == '{' || c == '[') {
           isBody = true;
         }
+    if (isBody) {
+          parser.parse(c);
+        }
+      }//yes
